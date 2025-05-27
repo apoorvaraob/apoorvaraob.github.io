@@ -124,7 +124,16 @@ resume:
 /* Add responsive font size for mobile devices */
 @media screen and (max-width: 768px) {
     .experience-title {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+    }
+    
+    .experience-header {
+        flex-direction: column;
+    }
+    
+    .logo-container {
+        margin-bottom: 1rem;
+        min-width: auto;
     }
     
     .meta-container {
@@ -136,6 +145,11 @@ resume:
     
     .title-container {
         padding-right: 0;
+        width: 100%;
+    }
+
+    .company-logo, .education-logo {
+        height: 30px !important;
     }
 }
 

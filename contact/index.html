@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact - Apoorva Rao</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+	<nav class="nav-bar">
+		<div class="nav-container">
+			<a href=".." class="nav-logo">AR</a>
+			<div class="nav-links">
+				
+				<a href=".." class="nav-link ">
+					Home
+				</a>
+				
+				<a href="../experience/" class="nav-link ">
+					Experience
+				</a>
+				
+				<a href="../projects/" class="nav-link ">
+					Projects
+				</a>
+				
+				<a href="../skills/" class="nav-link ">
+					Skills
+				</a>
+				
+				<a href="../beyond-work/" class="nav-link ">
+					Beyond Work
+				</a>
+				
+				<a href="./" class="nav-link active">
+					Contact
+				</a>
+				
+			</div>
+			<button class="nav-toggle">
+				<span class="hamburger"></span>
+			</button>
+		</div>
+	</nav>
+
+	
+
+	<main class="content">
+		
+
+		<div class="contact-container">
+    <h1>Get in Touch</h1>
+    <p class="contact-intro">I'd love to hear from you! Whether you have a question, opportunity, or just want to connect.</p>
+
+    <div class="form-wrapper">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbS4O2yPSFUz_um-w9zFf_sPElTrB9kUjwoWc6UtglFUlaGw/viewform?embedded=true" 
+            width="100%" 
+            height="800" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0">
+            Loading…
+        </iframe>
+    </div>
+</div>
+
+<footer class="page-footer">
+    <div class="footer-content">
+        <p class="last-updated">Last Updated: May 2025</p>
+        <p class="copyright">© 2025 Apoorva Rao Balevalachilu. All rights reserved.</p>
+    </div>
+</footer>
+
+<style>
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.contact-intro {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.form-wrapper {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.page-footer {
+    border-top: 1px solid #eee;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.last-updated {
+    margin-bottom: 0.5rem;
+}
+
+.copyright {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 1rem;
+    }
+
+    .form-wrapper {
+        margin: 0 -1rem;
+        border-radius: 0;
+    }
+
+    .footer-content {
+        padding: 0 1rem;
+    }
+}
+</style>
+	</main>
+
+	<script>
+		// Add smooth scrolling
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+
+		// Mobile navigation
+		const navToggle = document.querySelector('.nav-toggle');
+		const navLinks = document.querySelector('.nav-links');
+		
+		navToggle.addEventListener('click', () => {
+			navLinks.classList.toggle('nav-active');
+			navToggle.classList.toggle('active');
+		});
+	</script>
+</body>
+</html>

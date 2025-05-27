@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home - Apoorva Rao</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+	<nav class="nav-bar">
+		<div class="nav-container">
+			<a href="." class="nav-logo">AR</a>
+			<div class="nav-links">
+				
+				<a href="." class="nav-link active">
+					Home
+				</a>
+				
+				<a href="experience/" class="nav-link ">
+					Experience
+				</a>
+				
+				<a href="projects/" class="nav-link ">
+					Projects
+				</a>
+				
+				<a href="skills/" class="nav-link ">
+					Skills
+				</a>
+				
+				<a href="beyond-work/" class="nav-link ">
+					Beyond Work
+				</a>
+				
+				<a href="contact/" class="nav-link ">
+					Contact
+				</a>
+				
+			</div>
+			<button class="nav-toggle">
+				<span class="hamburger"></span>
+			</button>
+		</div>
+	</nav>
+
+	
+	<header class="header">
+		<div class="profile-container">
+			<img class="profile-photo" src="./images/profile2.jpeg" alt="Apoorva Rao">
+			<h1>Apoorva Rao Balevalachilu</h1>
+			
+			<div class="pronunciation">Pronunciation: uh·poor·vaa rao bah·lay·vah·luh·chi·lu</div>
+			
+			<div class="job-title"></div>
+			<div class="degree">MBA Candidate, University of Washington Foster School of Business, <br/> MS in Computer Science, University of Massachusetts Amherst</div>
+			<div class="social-links">
+				
+				<a href="https://linkedin.com/in/apoorvaraob" target="_blank" rel="noopener">
+					<i class="fab fa-linkedin"></i> LinkedIn
+				</a>
+				
+				
+				<a href="https://github.com/apoorvaraob" target="_blank" rel="noopener">
+					<i class="fab fa-github"></i> GitHub
+				</a>
+				
+			</div>
+		</div>
+	</header>
+	
+
+	<main class="content">
+		
+		<div class="card">
+			<p>As a Software Engineer evolving into Product Management, I specialize in developing cutting-edge AI/ML solutions with a strong focus on security. Currently enhancing my business acumen through an MBA at the University of Washington Foster School of Business, I combine deep technical knowledge with strategic thinking to build secure, scalable products. My experience spans leading various efforts on cross-functional teams, architecting org-wide security solutions, and delivering high-impact products that prioritize both innovation and security.</p>
+		</div>
+		
+
+		<h2 id="current-focus">Current Focus</h2>
+<ul>
+<li>🎯 Product Management - Technical</li>
+<li>☁️ Cloud Security</li>
+<li>🤖 Artificial Intelligence &amp; Machine Learning</li>
+<li>📊 Data-Driven Decision Making</li>
+</ul>
+<p><a href="/experience">View my full experience →</a></p>
+	</main>
+
+	<script>
+		// Add smooth scrolling
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+
+		// Mobile navigation
+		const navToggle = document.querySelector('.nav-toggle');
+		const navLinks = document.querySelector('.nav-links');
+		
+		navToggle.addEventListener('click', () => {
+			navLinks.classList.toggle('nav-active');
+			navToggle.classList.toggle('active');
+		});
+	</script>
+</body>
+</html>

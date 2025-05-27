@@ -1,7 +1,7 @@
 ---
 title: Home
 isHomepage: true
-homepageDescription: 'I am a Software Engineer turned Product Manager with a passion for building innovative AI/ML solutions. Currently pursuing my MBA at the University of Washington Foster School of Business, I bring together technical expertise and business acumen to drive product success. I have a demonstrated track record of driving cross-functional collaboration, managing security implementations for large organizations, and delivering impactful products.'
+homepageDescription: 'As a Software Engineer evolving into Product Management, I specialize in developing cutting-edge AI/ML solutions with a strong focus on security. Currently enhancing my business acumen through an MBA at the University of Washington Foster School of Business, I combine deep technical knowledge with strategic thinking to build secure, scalable products. My experience spans leading cross-functional teams, architecting enterprise-scale security solutions including identity and access management systems, and delivering high-impact products that prioritize both innovation and data protection.'
 ---
 
 # Welcome!

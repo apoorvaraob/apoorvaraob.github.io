@@ -121,6 +121,24 @@ resume:
     line-height: 1.4;
 }
 
+/* Add responsive font size for mobile devices */
+@media screen and (max-width: 768px) {
+    .experience-title {
+        font-size: 1.1rem;
+    }
+    
+    .meta-container {
+        position: relative;
+        width: 100%;
+        text-align: left;
+        margin-top: 0.5rem;
+    }
+    
+    .title-container {
+        padding-right: 0;
+    }
+}
+
 .meta-container {
     position: absolute;
     right: 0;

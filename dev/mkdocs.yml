@@ -1,0 +1,26 @@
+site_name: Apoorva Rao
+nav:
+  - Home: 'index.md'
+  - Experience: 'experience.md'
+  - Projects: 'projects.md'
+  - Skills: 'skills.md'
+  - Beyond Work: 'beyond-work.md'
+  - Contact: 'contact.md'
+
+extra:
+  name: Apoorva Rao Balevalachilu
+  pronunciation: uh·poor·vaa rao bah·lay·vah·luh·chi·lu
+  degree: MBA Candidate, University of Washington Foster School of Business, <br/> MS in Computer Science, University of Massachusetts Amherst 
+  social:
+    linkedin: https://linkedin.com/in/apoorvaraob
+    github: https://github.com/apoorvaraob
+
+theme:
+  name: null
+  custom_dir: 'custom_theme/'
+  palette:
+    primary: '#1E4B94'  # Royal Blue
+    accent: '#4A4A4A'   # Gray
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'

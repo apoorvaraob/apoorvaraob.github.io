@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ base_url }}/css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+	<nav class="nav-bar">
+		<div class="nav-container">
+			<a href="{{ base_url }}" class="nav-logo">AR</a>
+			<div class="nav-links">
+				{% for nav_item in nav %}
+				<a href="{{ nav_item.url|url }}" class="nav-link {% if nav_item.active %}active{% endif %}">
+					{{ nav_item.title }}
+				</a>
+				{% endfor %}
+			</div>
+			<button class="nav-toggle">
+				<span class="hamburger"></span>
+			</button>
+		</div>
+	</nav>
+
+	{% if page and page.meta and page.meta.isHomepage %}
+	<header class="header">
+		<div class="profile-container">
+			<img class="profile-photo" src="{{ base_url }}/images/profile2.jpeg" alt="Apoorva Rao">
+			<h1>{{ config.extra.name }}</h1>
+			{% if config.extra.pronunciation %}
+			<div class="pronunciation">Pronunciation: {{ config.extra.pronunciation }}</div>
+			{% endif %}
+			<div class="job-title">{{ config.extra.job_title }}</div>
+			<div class="degree">{{ config.extra.degree }}</div>
+			<div class="social-links">
+				{% if config.extra.social.linkedin %}
+				<a href="{{ config.extra.social.linkedin }}" target="_blank" rel="noopener">
+					<i class="fab fa-linkedin"></i> LinkedIn
+				</a>
+				{% endif %}
+				{% if config.extra.social.github %}
+				<a href="{{ config.extra.social.github }}" target="_blank" rel="noopener">
+					<i class="fab fa-github"></i> GitHub
+				</a>
+				{% endif %}
+			</div>
+		</div>
+	</header>
+	{% endif %}
+
+	<main class="content">
+		{% if page and page.meta.homepageDescription %}
+		<div class="card">
+			<p>{{ page.meta.homepageDescription }}</p>
+		</div>
+		{% endif %}
+
+		{{ page.content }}
+	</main>
+
+	<script>
+		// Add smooth scrolling
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+
+		// Mobile navigation
+		const navToggle = document.querySelector('.nav-toggle');
+		const navLinks = document.querySelector('.nav-links');
+		
+		navToggle.addEventListener('click', () => {
+			navLinks.classList.toggle('nav-active');
+			navToggle.classList.toggle('active');
+		});
+	</script>
+</body>
+</html>

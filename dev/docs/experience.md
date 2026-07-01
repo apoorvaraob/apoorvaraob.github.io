@@ -5,7 +5,7 @@ resume:
       - timePeriod: "June 2025 - Present"
         location: "Seattle, WA"
         logo: <img src="../images/aws.png" alt="AWS logo" height="40px" class="company-logo">
-        title: "Software Development Engineer<br>AWS Security Assurance"
+        title: "Product Manager Technical<br>AWS Security Assurance"
         descriptions:
         - Lead development of security assessment and compliance automation tools that help AWS services exceed the security and compliance expectations of regulators, auditors, and customers globally.
         - Design and implement scalable solutions that stand up to the scrutiny of external regulators and inspection by AWS's most security-sensitive customers.
@@ -194,7 +194,7 @@ resume:
             <img src="../images/aws.png" alt="AWS logo" height="40px" class="company-logo">
         </div>
         <div class="title-container">
-            <h2 class="experience-title">Software Development Engineer<br>AWS Security Assurance</h2>
+            <h2 class="experience-title">Product Manager Technical<br>AWS Security Assurance</h2>
             <div class="meta-container">
                 <p class="experience-period">June 2025 - Present</p>
                 <p class="experience-location">Seattle, WA</p>

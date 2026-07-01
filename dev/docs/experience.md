@@ -7,19 +7,19 @@ resume:
         logo: <img src="../images/aws.png" alt="AWS logo" height="40px" class="company-logo">
         title: "Product Manager Technical<br>AWS Security Assurance"
         descriptions:
-        - Lead development of security assessment and compliance automation tools that help AWS services exceed the security and compliance expectations of regulators, auditors, and customers globally.
-        - Design and implement scalable solutions that stand up to the scrutiny of external regulators and inspection by AWS's most security-sensitive customers.
-        - Collaborate with a multidisciplinary team of software engineers, security engineers, technical product/program managers, data engineers, and compliance specialists to build customer trust through innovative security solutions.
+        - Architected a human-in-the-loop oversight framework for AI-driven compliance automation — designed intervention as a calibrated control, not a catch-all, by tracking override rates, disagreement patterns, and error categories against explicit thresholds. The framework systematically reduces human intervention as model confidence grows, building auditable trust in autonomous operation for AWS's most security-sensitive customers.
+        - Built a context management system that auto-ingests product decisions, meeting notes, and Slack discussions into versioned, queryable skills — solving the context-freshness problem in agentic workflows. Live product knowledge is vended on-demand to engineering teams' AI agents via MCP, replacing stale documentation with a reliably current knowledge layer.
+        - Drove compliance automation that translates AWS security posture into auditable, regulator-ready evidence — reducing the manual burden on a 40+ person org across SWE, security, TPM, and compliance functions.
       - timePeriod: "August 2022 - January 2025"
         location: "Bellevue, WA"
         logo: <img src="../images/amazon.png" alt="Amazon logo" height="40px" class="company-logo">
-        title: "Software Development Engineer and Research Engineer<br>Applied AI - Amazon Worldwide Stores"
+        title: "Software Development Engineer with Product Management Responsibilities<br>Applied AI - Amazon Worldwide Stores"
         descriptions:
-        - Identified customer pain points, explored relevant recent research addressing similar challenges, developed proof of concept or minimally viable/lovable product, iterated on prototype, and conducted user acceptance tests for Human-in-the-loop tools like Computer Vision Annotation Tool (CVAT) and AWS Sagemaker Groundtruth for Prime Air data annotations.
-        - Developed a geocode verification prototype using AWS Bedrock Agents that mirrors auditor workflows by integrating external APIs (Bing, ESRI, HereMaps) for Last Mile Analytics. The initial phase achieved promising accuracy and recall on curated groundtruth data, helping shape the future project roadmap.
-        - Led comprehensive security and privacy reviews for handling classified customer data to meet industry compliance standards Earned the "Mission Impossible" award for rapidly building customer trust through security implementations with agile. Managed service-level security certifications for a 40+ person organization and shared best practices across teams. Additionally, implemented security measures for a worldwide fulfillment center stowing and shelf recognition automation project, contributing to an $8.8MM YoY reduction in cost to serve.
-        - Co-led product development for SmartSifting, a model training accelerator library achieving up to 35% efficiency gains, through creating whitepapers, presentations, press releases, and FAQs. Incorporated private beta feedback from major AWS customers to improve user experience before launching in the AWS Sagemaker Deep Learning Container.
-        - Cut experimentation setup time by 50% for science teams working on AI agents by implementing an experiment harness on AWS Sagemaker Studio and providing targeted documentation.
+        - Secured a worldwide fulfillment-center shelf-recognition automation project — implemented the security and compliance posture required to ship, contributing to an $8.8MM YoY variable cost reduction. Managed service-level certifications for a 40+ person org, earning the internal "Mission Impossible" award for trust-building velocity.
+        - Owned the product cycle for Prime Air's data annotation tooling — ran discovery, prototyped in CV Annotation Tool and SageMaker Ground Truth, and validated with annotators to improve annotation throughput and quality.
+        - Developed a geocode verification prototype using AWS Bedrock Agents that mirrors auditor workflows by integrating external APIs (Bing, ESRI, HereMaps) for Last Mile Analytics; initial phase achieved 96% accuracy and 86% recall on curated ground-truth data.
+        - Co-led the product launch of SmartSifting, a training accelerator library that cut model training costs by up to 35% — drove the external narrative through whitepapers and incorporated private-beta feedback from major AWS customers before launching in SageMaker Deep Learning Containers.
+        - Cut experimentation setup time by 50% for AI agent science teams by implementing an experiment harness on AWS SageMaker Studio and providing targeted documentation.
       - timePeriod: "2024 - 2026"
         location: "Seattle, WA"
         logo: <img src="../images/uw.png" alt="UW logo" height="125px" class="education-logo">
@@ -27,7 +27,7 @@ resume:
         descriptions:
           - "Coursework in Strategic Management of Technology & Innovation, focusing on dynamics of tech-driven industries and frameworks for managing technology-intensive businesses"
           - "Advanced studies in Entrepreneurship and Customer Experience Strategy, including venture creation, startup financing, and CX methodology"
-          - "Specialized training in Tools for analytics-driven business insights"
+          - "Specialized training in tools for analytics-driven business insights"
           - "Leadership development through courses in Ethical Leadership, Leading Organizational Change, and Building Effective Teams"
       - timePeriod: "September 2023"
         location: "Berkeley, CA"
@@ -43,13 +43,15 @@ resume:
         logo: <img src="../images/alexa.png" alt="Alexa logo" height="150px" class="company-logo">
         title: "Software Development Engineer<br>Alexa AI - Amazon Devices"
         descriptions:
-          - Authored clean efficient code in line with company standards following agile methodologies; collaborated with the team to solve complex problems related to model building, testing and release.
-          - Migrated language model building services onto AWS to simplify onboarding and user experience for applied scientists
-          - Accelerated baseline data collection from control natural language understanding models for metrics used to measure treatment model accuracy improvements for A/B Testing.
-          - Designed and built inverse text normalization webapp to convert spoken text into correct written forms to identify search keywords for use by all business verticals.
-          - Built search for entity catalogs (e.g., music, devices, skills) on AWS Elasticsearch.
-          - Won internal hackathon in the "Best use of Technology" and the "Ship it!" category in 2017 for innovative Alexa skills prototypes.
-          - Regularly presented relevant machine learning research papers at the team's journal club.
+          - Migrated Alexa's language-model building services to AWS — reducing onboarding friction for applied scientists and enabling faster iteration on NLU model improvements across all Alexa business verticals.
+          - Designed and built an inverse-text-normalization web app that converts spoken text into correct written forms for keyword identification, used across all Alexa business verticals.
+          - Built search over entity catalogs (music, devices, skills) on AWS Elasticsearch and accelerated baseline NLU data collection that fed A/B testing metrics.
+      - timePeriod: "June 2015 - August 2015"
+        location: "Seattle, WA"
+        logo: <img src="../images/amazon.png" alt="Amazon logo" height="40px" class="company-logo">
+        title: "Software Development Engineer Intern<br>Amazon Retail"
+        descriptions:
+          - Created a new search experience for gift-givers using Amazon Baby Registry based on deep-dive customer feedback; launched to all US customers on amazon.com in collaboration with UX designers and product managers.
       - timePeriod: "2014 - 2016"
         location: "Amherst, MA"
         logo: <img src="../images/umass.png" alt="UMass logo" height="125px" class="education-logo">
@@ -58,20 +60,19 @@ resume:
           - "Specialized in Natural Language Processing and Machine Learning with focus on statistical methods for text analysis and language understanding"
           - "Independent study related to word embeddings for research paper submission reviewer matching for conferences"
           - EMC Student Participation Award to attend Grace Hopper Celebration for Women in Computer Science.
-      - timePeriod: "July 2013 - June 2014"
+      - timePeriod: "January 2013 - June 2014"
         location: "Bangalore, India"
         logo: <img src="../images/cisco.png" alt="Cisco Systems logo" height="55px" class="company-logo">
-        title: "IT Engineer<br>Cloud Orchestration and Platform Services"
+        title: "IT Engineer<br>Cloud Orchestration and Platform Services, Cisco Systems"
         descriptions:
-          - Enhanced web administration tools for company-wide resource provisioning
-          - Maintained cisco.com and related websites
-          - Received "Cisco Star" and "Connected Recognition" awards
+          - Added features to company-wide web administration and resource reporting tool for an internal PaaS; maintained cisco.com and related sites with on-call support.
+          - Won "Cisco Star" and "Connected Recognition" awards.
       - timePeriod: "2009 - 2013"
-        location: "Bangalore, India" 
+        location: "Bangalore, India"
         logo: <img src="../images/pes_university.png" alt="PES University logo" height="60px" class="education-logo">
         title: "B.E., Computer Science and Engineering<br>PES University"
         descriptions:
-          - Graduated with Distinction (all semesters)
+          - Graduated with Distinction Award, all eight semesters.
 ---
 
 <style>
@@ -203,9 +204,9 @@ resume:
     </div>
     <div class="experience-description">
         <ul>
-            <li>Lead development of security assessment and compliance automation tools that help AWS services exceed the security and compliance expectations of regulators, auditors, and customers globally.</li>
-            <li>Design and implement scalable solutions that stand up to the scrutiny of external regulators and inspection by AWS's most security-sensitive customers.</li>
-            <li>Collaborate with a multidisciplinary team of software engineers, security engineers, technical product/program managers, data engineers, and compliance specialists to build customer trust through innovative security solutions.</li>
+            <li>Architected a human-in-the-loop oversight framework for AI-driven compliance automation — designed intervention as a calibrated control, not a catch-all, by tracking override rates, disagreement patterns, and error categories against explicit thresholds. The framework systematically reduces human intervention as model confidence grows, building auditable trust in autonomous operation for AWS's most security-sensitive customers.</li>
+            <li>Built a context management system that auto-ingests product decisions, meeting notes, and Slack discussions into versioned, queryable skills — solving the context-freshness problem in agentic workflows. Live product knowledge is vended on-demand to engineering teams' AI agents via MCP, replacing stale documentation with a reliably current knowledge layer.</li>
+            <li>Drove compliance automation that translates AWS security posture into auditable, regulator-ready evidence — reducing the manual burden on a 40+ person org across SWE, security, TPM, and compliance functions.</li>
         </ul>
     </div>
 </div>
@@ -216,7 +217,7 @@ resume:
             <img src="../images/amazon.png" alt="Amazon logo" height="40px" class="company-logo">
         </div>
         <div class="title-container">
-            <h2 class="experience-title">Software Development Engineer and Research Engineer<br>Applied AI - Amazon Worldwide Stores</h2>
+            <h2 class="experience-title">Software Development Engineer with Product Management Responsibilities<br>Applied AI - Amazon Worldwide Stores</h2>
             <div class="meta-container">
                 <p class="experience-period">August 2022 - January 2025</p>
                 <p class="experience-location">Bellevue, WA</p>
@@ -225,11 +226,11 @@ resume:
     </div>
     <div class="experience-description">
         <ul>
-            <li>Identified customer pain points, explored relevant recent research addressing similar challenges, developed proof of concept or minimally viable/lovable product, iterated on prototype, and conducted user acceptance tests for Human-in-the-loop tools like Computer Vision Annotation Tool (CVAT) and AWS Sagemaker Groundtruth for Prime Air data annotations.</li>
-            <li>Developed a geocode verification prototype using AWS Bedrock Agents that mirrors auditor workflows by integrating external APIs (Bing, ESRI, HereMaps) for Last Mile Analytics. The initial phase achieved promising accuracy and recall on curated groundtruth data, helping shape the future project roadmap.</li>
-            <li>Led comprehensive security and privacy reviews for handling classified customer data to meet industry compliance standards Earned the "Mission Impossible" award for rapidly building customer trust through security implementations with agile. Managed service-level security certifications for a 40+ person organization and shared best practices across teams. Additionally, implemented security measures for a worldwide fulfillment center stowing and shelf recognition automation project, contributing to an $8.8MM YoY reduction in cost to serve.</li>
-            <li>Co-led product development for SmartSifting, a model training accelerator library achieving up to 35% efficiency gains, through creating whitepapers, presentations, press releases, and FAQs. Incorporated private beta feedback from major AWS customers to improve user experience before launching in the AWS Sagemaker Deep Learning Container.</li>
-            <li>Cut experimentation setup time by 50% for science teams working on AI agents by implementing an experiment harness on AWS Sagemaker Studio and providing targeted documentation.</li>
+            <li>Secured a worldwide fulfillment-center shelf-recognition automation project — implemented the security and compliance posture required to ship, contributing to an $8.8MM YoY variable cost reduction. Managed service-level certifications for a 40+ person org, earning the internal "Mission Impossible" award for trust-building velocity.</li>
+            <li>Owned the product cycle for Prime Air's data annotation tooling — ran discovery, prototyped in CV Annotation Tool and SageMaker Ground Truth, and validated with annotators to improve annotation throughput and quality.</li>
+            <li>Developed a geocode verification prototype using AWS Bedrock Agents that mirrors auditor workflows by integrating external APIs (Bing, ESRI, HereMaps) for Last Mile Analytics; initial phase achieved 96% accuracy and 86% recall on curated ground-truth data.</li>
+            <li>Co-led the product launch of SmartSifting, a training accelerator library that cut model training costs by up to 35% — drove the external narrative through whitepapers and incorporated private-beta feedback from major AWS customers before launching in SageMaker Deep Learning Containers.</li>
+            <li>Cut experimentation setup time by 50% for AI agent science teams by implementing an experiment harness on AWS SageMaker Studio and providing targeted documentation.</li>
         </ul>
     </div>
 </div>
@@ -251,7 +252,7 @@ resume:
         <ul>
             <li>Coursework in Strategic Management of Technology & Innovation, focusing on dynamics of tech-driven industries and frameworks for managing technology-intensive businesses</li>
             <li>Advanced studies in Entrepreneurship and Customer Experience Strategy, including venture creation, startup financing, and CX methodology</li>
-            <li>Specialized training in Tools for analytics-driven business insights</li>
+            <li>Specialized training in tools for analytics-driven business insights</li>
             <li>Leadership development through courses in Ethical Leadership, Leading Organizational Change, and Building Effective Teams</li>
         </ul>
     </div>
@@ -295,13 +296,29 @@ resume:
     </div>
     <div class="experience-description">
         <ul>
-            <li>Authored clean efficient code in line with company standards following agile methodologies; collaborated with the team to solve complex problems related to model building, testing and release.</li>
-            <li>Migrated language model building services onto AWS to simplify onboarding and user experience for applied scientists</li>
-            <li>Accelerated baseline data collection from control natural language understanding models for metrics used to measure treatment model accuracy improvements for A/B Testing.</li>
-            <li>Designed and built inverse text normalization webapp to convert spoken text into correct written forms to identify search keywords for use by all business verticals.</li>
-            <li>Built search for entity catalogs (e.g., music, devices, skills) on AWS Elasticsearch.</li>
-            <li>Won internal hackathon in the "Best use of Technology" and the "Ship it!" category in 2017 for innovative Alexa skills prototypes.</li>
-            <li>Regularly presented relevant machine learning research papers at the team's journal club.</li>
+            <li>Migrated Alexa's language-model building services to AWS — reducing onboarding friction for applied scientists and enabling faster iteration on NLU model improvements across all Alexa business verticals.</li>
+            <li>Designed and built an inverse-text-normalization web app that converts spoken text into correct written forms for keyword identification, used across all Alexa business verticals.</li>
+            <li>Built search over entity catalogs (music, devices, skills) on AWS Elasticsearch and accelerated baseline NLU data collection that fed A/B testing metrics.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="experience-section">
+    <div class="experience-header">
+        <div class="logo-container">
+            <img src="../images/amazon.png" alt="Amazon logo" height="40px" class="company-logo">
+        </div>
+        <div class="title-container">
+            <h2 class="experience-title">Software Development Engineer Intern<br>Amazon Retail</h2>
+            <div class="meta-container">
+                <p class="experience-period">June 2015 - August 2015</p>
+                <p class="experience-location">Seattle, WA</p>
+            </div>
+        </div>
+    </div>
+    <div class="experience-description">
+        <ul>
+            <li>Created a new search experience for gift-givers using Amazon Baby Registry based on deep-dive customer feedback; launched to all US customers on amazon.com in collaboration with UX designers and product managers.</li>
         </ul>
     </div>
 </div>
@@ -323,7 +340,7 @@ resume:
         <ul>
             <li>Specialized in Natural Language Processing and Machine Learning with focus on statistical methods for text analysis and language understanding</li>
             <li>Independent study related to word embeddings for research paper submission reviewer matching for conferences</li>
-            <li>EMC Student Participation Award to attend Grace Hopper Celebration for Women in Computer Science.</li>
+            <li>EMC Student Participation Award to attend Grace Hopper Celebration for Women in Computer Science</li>
         </ul>
     </div>
 </div>
@@ -334,18 +351,17 @@ resume:
             <img src="../images/cisco.png" alt="Cisco Systems logo" height="55px" class="company-logo">
         </div>
         <div class="title-container">
-            <h2 class="experience-title">IT Engineer<br>Cloud Orchestration and Platform Services</h2>
+            <h2 class="experience-title">IT Engineer<br>Cloud Orchestration and Platform Services, Cisco Systems</h2>
             <div class="meta-container">
-                <p class="experience-period">July 2013 - June 2014</p>
+                <p class="experience-period">January 2013 - June 2014</p>
                 <p class="experience-location">Bangalore, India</p>
             </div>
         </div>
     </div>
     <div class="experience-description">
         <ul>
-            <li>Enhanced web administration tools for company-wide resource provisioning</li>
-            <li>Maintained cisco.com and related websites</li>
-            <li>Received "Cisco Star" and "Connected Recognition" awards</li>
+            <li>Added features to company-wide web administration and resource reporting tool for an internal PaaS; maintained cisco.com and related sites with on-call support.</li>
+            <li>Won "Cisco Star" and "Connected Recognition" awards.</li>
         </ul>
     </div>
 </div>
@@ -365,7 +381,7 @@ resume:
     </div>
     <div class="experience-description">
         <ul>
-            <li>Graduated with Distinction (all semesters)</li>
+            <li>Graduated with Distinction Award, all eight semesters</li>
         </ul>
     </div>
-</div> 
+</div>

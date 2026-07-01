@@ -75,11 +75,37 @@
 		// Mobile navigation
 		const navToggle = document.querySelector('.nav-toggle');
 		const navLinks = document.querySelector('.nav-links');
-		
+
 		navToggle.addEventListener('click', () => {
 			navLinks.classList.toggle('nav-active');
 			navToggle.classList.toggle('active');
 		});
-	</script>
+
+		// Scroll-reveal
+		(function() {
+			document.querySelectorAll('.content h2').forEach(function(el) {
+				el.classList.add('reveal-heading');
+			});
+
+			var revealEls = document.querySelectorAll(
+				'.card, .timeline-item, .skill-category, .project-card, .experience-section, h2.reveal-heading'
+			);
+
+			if ('IntersectionObserver' in window) {
+				var observer = new IntersectionObserver(function(entries) {
+					entries.forEach(function(entry) {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('visible');
+							observer.unobserve(entry.target);
+						}
+					});
+				}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+				revealEls.forEach(function(el) { observer.observe(el); });
+			} else {
+				revealEls.forEach(function(el) { el.classList.add('visible'); });
+			}
+		})();
+</script>
 </body>
 </html>

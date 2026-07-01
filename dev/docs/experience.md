@@ -20,7 +20,7 @@ resume:
         - Led comprehensive security and privacy reviews for handling classified customer data to meet industry compliance standards Earned the "Mission Impossible" award for rapidly building customer trust through security implementations with agile. Managed service-level security certifications for a 40+ person organization and shared best practices across teams. Additionally, implemented security measures for a worldwide fulfillment center stowing and shelf recognition automation project, contributing to an $8.8MM YoY reduction in cost to serve.
         - Co-led product development for SmartSifting, a model training accelerator library achieving up to 35% efficiency gains, through creating whitepapers, presentations, press releases, and FAQs. Incorporated private beta feedback from major AWS customers to improve user experience before launching in the AWS Sagemaker Deep Learning Container.
         - Cut experimentation setup time by 50% for science teams working on AI agents by implementing an experiment harness on AWS Sagemaker Studio and providing targeted documentation.
-      - timePeriod: "2023 - 2026 (Expected)"
+      - timePeriod: "2024 - 2026"
         location: "Seattle, WA"
         logo: <img src="../images/uw.png" alt="UW logo" height="125px" class="education-logo">
         title: "MBA, Technology Management<br>University of Washington Foster School of Business"
@@ -242,7 +242,7 @@ resume:
         <div class="title-container">
             <h2 class="experience-title">MBA, Technology Management<br>University of Washington Foster School of Business</h2>
             <div class="meta-container">
-                <p class="experience-period">2023 - 2026 (Expected)</p>
+                <p class="experience-period">2024 - 2026</p>
                 <p class="experience-location">Seattle, WA</p>
             </div>
         </div>

@@ -12,10 +12,10 @@ title: Projects
         
         <h3>Key Features</h3>
         <ul>
-            <li>Multi-API integration (Bing, ESRI, HereMaps)</li>
-            <li>High accuracy and recall on groundtruth data</li>
-            <li>Robust security measures for sensitive data</li>
-            <li>Scalable architecture for large-scale processing</li>
+            <li>Multi-API integration (Bing, ESRI, HereMaps) via AWS Bedrock Agents</li>
+            <li>96% accuracy and 86% recall on groundtruth data</li>
+            <li>Robust security measures for sensitive location data</li>
+            <li>Scalable architecture for large-scale batch processing</li>
         </ul>
         
         <h3>Technologies</h3>

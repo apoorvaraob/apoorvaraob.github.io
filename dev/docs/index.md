@@ -1,7 +1,7 @@
 ---
 title: Home
 isHomepage: true
-homepageDescription: 'As a Product Manager with a background in software engineering, I specialize in developing cutting-edge AI/ML solutions with a strong focus on security. With an MBA from the University of Washington Foster School of Business, I combine deep technical knowledge with strategic thinking to build secure, scalable products. My experience spans leading cross-functional teams, architecting org-wide security solutions, and delivering high-impact products that prioritize both innovation and security.'
+homepageDescription: 'AI product leader with a decade of engineering experience shipping ML systems at Amazon. I translate complex AI/ML capabilities into products that scale — from shelf-recognition computer vision generating $8.8MM in incremental revenue, to compliance automation reducing manual work across a 40+ person organization. Now an MBA graduate from the University of Washington Foster School of Business, I bridge deep technical fluency with strategic product thinking to build secure, impactful AI products.'
 ---
 
 ## Current Focus

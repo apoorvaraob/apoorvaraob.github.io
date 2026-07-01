@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home - Apoorva Rao</title>
+	<script>
+		// Set theme before first paint to avoid a flash of the wrong theme
+		(function() {
+			try {
+				var t = localStorage.getItem('theme');
+				if (!t) {
+					t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				}
+				document.documentElement.setAttribute('data-theme', t);
+			} catch (e) {
+				document.documentElement.setAttribute('data-theme', 'light');
+			}
+		})();
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+	<nav class="nav-bar">
+		<div class="nav-container">
+			<a href="." class="nav-logo">AR</a>
+			<div class="nav-links">
+				
+				<a href="." class="nav-link active">
+					Home
+				</a>
+				
+				<a href="experience/" class="nav-link ">
+					Experience
+				</a>
+				
+				<a href="projects/" class="nav-link ">
+					Projects
+				</a>
+				
+				<a href="skills/" class="nav-link ">
+					Skills
+				</a>
+				
+				<a href="beyond-work/" class="nav-link ">
+					Beyond Work
+				</a>
+				
+				<a href="contact/" class="nav-link ">
+					Contact
+				</a>
+				
+			</div>
+			<button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+				<i class="fas fa-moon"></i>
+			</button>
+			<button class="nav-toggle">
+				<span class="hamburger"></span>
+			</button>
+		</div>
+	</nav>
+
+	
+	<header class="header">
+		<div class="profile-container">
+			<img class="profile-photo" src="./images/profile2.jpeg" alt="Apoorva Rao">
+			<h1>Apoorva Rao Balevalachilu</h1>
+			
+			<div class="pronunciation">uh·poor·vaa rao bah·lay·vah·luh·chi·lu</div>
+			
+			<div class="job-title">Product Manager</div>
+			<div class="degree">MBA, University of Washington Foster School of Business, <br/> MS in Computer Science, University of Massachusetts Amherst</div>
+			<div class="social-links">
+				
+				<a href="https://linkedin.com/in/apoorvaraob" target="_blank" rel="noopener">
+					<i class="fab fa-linkedin"></i> LinkedIn
+				</a>
+				
+				
+				<a href="https://github.com/apoorvaraob" target="_blank" rel="noopener">
+					<i class="fab fa-github"></i> GitHub
+				</a>
+				
+			</div>
+		</div>
+	</header>
+	
+
+	<main class="content">
+		
+		<div class="card intro-card">
+			<p>AI product leader with a decade of engineering experience shipping ML systems at Amazon. I translate complex AI/ML capabilities into products that scale — from shelf-recognition computer vision generating $8.8MM in incremental revenue, to compliance automation reducing manual work across a 40+ person organization. Now an MBA graduate from the University of Washington Foster School of Business, I bridge deep technical fluency with strategic product thinking to build secure, impactful AI products.</p>
+		</div>
+		
+
+		<h2 id="current-focus">Current Focus</h2>
+<ul>
+<li>🎯 Product Management - Technical</li>
+<li>☁️ Cloud Security</li>
+<li>🤖 Artificial Intelligence &amp; Machine Learning</li>
+<li>📊 Data-Driven Decision Making</li>
+</ul>
+<p><a href="/experience">View my full experience →</a></p>
+	</main>
+
+	<script>
+		// Theme toggle
+		(function() {
+			var toggle = document.querySelector('.theme-toggle');
+			if (!toggle) return;
+			var icon = toggle.querySelector('i');
+
+			function syncIcon(theme) {
+				icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+			}
+
+			syncIcon(document.documentElement.getAttribute('data-theme'));
+
+			toggle.addEventListener('click', function() {
+				var current = document.documentElement.getAttribute('data-theme');
+				var next = current === 'dark' ? 'light' : 'dark';
+				document.documentElement.setAttribute('data-theme', next);
+				try { localStorage.setItem('theme', next); } catch (e) {}
+				syncIcon(next);
+			});
+		})();
+
+		// Add smooth scrolling
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+
+		// Mobile navigation
+		const navToggle = document.querySelector('.nav-toggle');
+		const navLinks = document.querySelector('.nav-links');
+
+		navToggle.addEventListener('click', () => {
+			navLinks.classList.toggle('nav-active');
+			navToggle.classList.toggle('active');
+		});
+
+		// Scroll-reveal
+		(function() {
+			// Only decorate genuine section headings (not experience/skill card titles)
+			document.querySelectorAll('.content h2').forEach(function(el) {
+				if (el.classList.contains('experience-title')) return;
+				if (el.closest('.skill-category')) return;
+				el.classList.add('reveal-heading');
+			});
+
+			var revealEls = document.querySelectorAll(
+				'.card, .timeline-item, .skill-category, .project-card, .experience-section, h2.reveal-heading'
+			);
+
+			if ('IntersectionObserver' in window) {
+				var observer = new IntersectionObserver(function(entries) {
+					entries.forEach(function(entry) {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('visible');
+							observer.unobserve(entry.target);
+						}
+					});
+				}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+				revealEls.forEach(function(el) { observer.observe(el); });
+			} else {
+				revealEls.forEach(function(el) { el.classList.add('visible'); });
+			}
+		})();
+	</script>
+</body>
+</html>

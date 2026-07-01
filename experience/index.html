@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Experience - Apoorva Rao</title>
+	<script>
+		// Set theme before first paint to avoid a flash of the wrong theme
+		(function() {
+			try {
+				var t = localStorage.getItem('theme');
+				if (!t) {
+					t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				}
+				document.documentElement.setAttribute('data-theme', t);
+			} catch (e) {
+				document.documentElement.setAttribute('data-theme', 'light');
+			}
+		})();
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+	<nav class="nav-bar">
+		<div class="nav-container">
+			<a href=".." class="nav-logo">AR</a>
+			<div class="nav-links">
+				
+				<a href=".." class="nav-link ">
+					Home
+				</a>
+				
+				<a href="./" class="nav-link active">
+					Experience
+				</a>
+				
+				<a href="../projects/" class="nav-link ">
+					Projects
+				</a>
+				
+				<a href="../skills/" class="nav-link ">
+					Skills
+				</a>
+				
+				<a href="../beyond-work/" class="nav-link ">
+					Beyond Work
+				</a>
+				
+				<a href="../contact/" class="nav-link ">
+					Contact
+				</a>
+				
+			</div>
+			<button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+				<i class="fas fa-moon"></i>
+			</button>
+			<button class="nav-toggle">
+				<span class="hamburger"></span>
+			</button>
+		</div>
+	</nav>
+
+	
+
+	<main class="content">
+		
+
+		<style>
+.experience-section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    transition: transform 0.2s ease-in-out;
+}
+
+.experience-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.experience-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.logo-container {
+    margin-right: 1.5rem;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-logo, .education-logo {
+    object-fit: contain;
+    margin-right: 1rem;
+}
+
+.title-container {
+    flex-grow: 1;
+    padding-right: 200px; /* Make space for the date and location */
+}
+
+.experience-title {
+    margin: 0;
+    color: var(--md-primary-fg-color);
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+/* Add responsive font size for mobile devices */
+@media screen and (max-width: 768px) {
+    .experience-title {
+        font-size: 0.9rem;
+    }
+
+    .experience-header {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        margin-bottom: 1rem;
+        min-width: auto;
+    }
+
+    .meta-container {
+        position: relative;
+        width: 100%;
+        text-align: left;
+        margin-top: 0.5rem;
+    }
+
+    .title-container {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .company-logo, .education-logo {
+        height: 30px !important;
+    }
+}
+
+.meta-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    width: 180px;
+}
+
+.experience-period {
+    font-size: 1rem;
+    color: var(--md-default-fg-color--light);
+    margin: 0;
+    margin-bottom: 0.25rem;
+}
+
+.experience-location {
+    font-size: 0.9rem;
+    color: var(--md-default-fg-color--light);
+    margin: 0;
+}
+
+.experience-description {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--md-primary-fg-color--light);
+}
+
+.experience-description li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+</style>
+
+<h1 id="professional-experience">Professional Experience</h1>
+<div class="experience-section">
+    <div class="experience-header">
+        <div class="logo-container">
+            <img src="../images/aws.png" alt="AWS logo" height="40px" class="company-logo">
+        </div>
+        <div class="title-container">
+            <h2 class="experience-title">Product Manager Technical<br>AWS Security Assurance</h2>
+            <div class="meta-container">
+                <p class="experience-period">June 2025 - Present</p>
+                <p class="experience-location">Seattle, WA</p>
+            </div>
+        </div>
+    </div>
+    <div class="experience-description">
+        <ul>
+            <li>Architected a human-in-the-loop oversight framework for AI-driven compliance automation — designed intervention as a calibrated control, not a catch-all, by tracking override rates, disagreement patterns, and error categories against explicit thresholds. The framework systematically reduces human intervention as model confidence grows, building auditable trust in autonomous operation for AWS's most security-sensitive customers.</li>
+            <li>Built a context management system that auto-ingests product decisions, meeting notes, and Slack discussions into versioned, queryable skills — solving the context-freshness problem in agentic workflows. Live product knowledge is vended on-demand to engineering teams' AI agents via MCP, replacing stale documentation with a reliably current knowledge layer.</li>
+            <li>Drove compliance automation that translates AWS security posture into auditable, regulator-ready evidence — reducing the manual burden on a 40+ person org across SWE, security, TPM, and compliance functions.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="experience-section">
+    <div class="experience-header">
+        <div class="logo-container">
+            <img src="../images/amazon.png" alt="Amazon logo" height="40px" class="company-logo">
+        </div>
+        <div class="title-container">
+            <h2 class="experience-title">Software Development Engineer with Product Management Responsibilities<br>Applied AI - Amazon Worldwide Stores</h2>
+            <div class="meta-container">
+                <p class="experience-period">August 2022 - January 2025</p>
+                <p class="experience-location">Bellevue, WA</p>
+            </div>
+        </div>
+    </div>
+    <div class="experience-description">
+        <ul>
+            <li>Secured a worldwide fulfillment-center shelf-recognition automation project — implemented the security and compliance posture required to ship, contributing to an $8.8MM YoY variable cost reduction. Managed service-level certifications for a 40+ person org, earning the internal "Mission Impossible" award for trust-building velocity.</li>
+            <li>Owned the product cycle for Prime Air's data annotation tooling — ran discovery, prototyped in CV Annotation Tool and SageMaker Ground Truth, and validated with annotators to improve annotation throughput and quality.</li>
+            <li>Developed a geocode verification prototype using AWS Bedrock Agents that mirrors auditor workflows by integrating external APIs (Bing, ESRI, HereMaps) for Last Mile Analytics; initial phase achieved 96% accuracy and 86% recall on curated ground-truth data.</li>
+            <li>Co-led the product launch of SmartSifting, a training accelerator library that cut model training costs by up to 35% — drove the external narrative through whitepapers and incorporated private-beta feedback from major AWS customers before launching in SageMaker Deep Learning Containers.</li>
+            <li>Cut experimentation setup time by 50% for AI agent science teams by implementing an experiment harness on AWS SageMaker Studio and providing targeted documentation.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="experience-section">
+    <div class="experience-header">
+        <div class="logo-container">
+            <img src="../images/uw.png" alt="UW logo" height="125px" class="education-logo">
+        </div>
+        <div class="title-container">
+            <h2 class="experience-title">MBA, Technology Management<br>University of Washington Foster School of Business</h2>
+            <div class="meta-container">
+                <p class="experience-period">2024 - 2026</p>
+                <p class="experience-location">Seattle, WA</p>
+            </div>
+        </div>
+    </div>
+    <div class="experience-description">
+        <ul>
+            <li>Coursework in Strategic Management of Technology & Innovation, focusing on dynamics of tech-driven industries and frameworks for managing technology-intensive businesses</li>
+            <li>Advanced studies in Entrepreneurship and Customer Experience Strategy, including venture creation, startup financing, and CX methodology</li>
+            <li>Specialized training in tools for analytics-driven business insights</li>
+            <li>Leadership development through courses in Ethical Leadership, Leading Organizational Change, and Building Effective Teams</li>
+        </ul>
+    </div>
+</div>
+
+<div class="experience-section">
+    <div class="experience-header">
+        <div class="logo-container">
+            <img src="../images/berkeley.png" alt="Berkeley logo" height="125px" class="education-logo">
+        </div>
+        <div class="title-container">
+            <h2 class="experience-title">Product Management Program Certificate<br>UC Berkeley Haas School of Business</h2>
+            <div class="meta-container">
+                <p class="experience-period">September 2023</p>
+                <p class="experience-location">Berkeley, CA</p>
+            </div>
+        </div>
+    </div>
+    <div class="experience-description">
+        <ul>
+            <li>Intensive program focused on end-to-end product management methodologies, from ideation to market launch</li>
+            <li>Developed expertise in customer discovery, market analysis, product strategy, and agile development practices</li>
+            <li>Created product roadmaps and go-to-market strategies through hands-on projects and real-world case studies</li>
+            <li>Collaborated with cross-functional teams to define product requirements, prioritize features, and deliver value propositions</li>
+        </ul>
+    </div>
+</div>
+
+<div class="experience-section">
+    <div class="experience-header">
+        <div class="logo-container">
+            <img src="../images/alexa.png" alt="Alexa logo" height="150px" class="company-logo">
+        </div>
+        <div class="title-container">
+            <h2 class="experience-title">Software Development Engineer<br>Alexa AI - Amazon Devices</h2>
+            <div class="meta-container">
+                <p class="experience-period">June 2016 - November 2020</p>
+                <p class="experience-location">Cambridge, MA & Seattle, WA</p>
+            </div>
+        </div>
+    </div>
+    <div class="experience-description">
+        <ul>
+            <li>Migrated Alexa's language-model building services to AWS — reducing onboarding friction for applied scientists and enabling faster iteration on NLU model improvements across all Alexa business verticals.</li>
+            <li>Designed and built an inverse-text-normalization web app that converts spoken text into correct written forms for keyword identification, used across all Alexa business verticals.</li>
+            <li>Built search over entity catalogs (music, devices, skills) on AWS Elasticsearch and accelerated baseline NLU data collection that fed A/B testing metrics.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="experience-section">
+    <div class="experience-header">
+        <div class="logo-container">
+            <img src="../images/amazon.png" alt="Amazon logo" height="40px" class="company-logo">
+        </div>
+        <div class="title-container">
+            <h2 class="experience-title">Software Development Engineer Intern<br>Amazon Retail</h2>
+            <div class="meta-container">
+                <p class="experience-period">June 2015 - August 2015</p>
+                <p class="experience-location">Seattle, WA</p>
+            </div>
+        </div>
+    </div>
+    <div class="experience-description">
+        <ul>
+            <li>Created a new search experience for gift-givers using Amazon Baby Registry based on deep-dive customer feedback; launched to all US customers on amazon.com in collaboration with UX designers and product managers.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="experience-section">
+    <div class="experience-header">
+        <div class="logo-container">
+            <img src="../images/umass.png" alt="UMass logo" height="125px" class="education-logo">
+        </div>
+        <div class="title-container">
+            <h2 class="experience-title">MS, Computer Science<br>University of Massachusetts Amherst</h2>
+            <div class="meta-container">
+                <p class="experience-period">2014 - 2016</p>
+                <p class="experience-location">Amherst, MA</p>
+            </div>
+        </div>
+    </div>
+    <div class="experience-description">
+        <ul>
+            <li>Specialized in Natural Language Processing and Machine Learning with focus on statistical methods for text analysis and language understanding</li>
+            <li>Independent study related to word embeddings for research paper submission reviewer matching for conferences</li>
+            <li>EMC Student Participation Award to attend Grace Hopper Celebration for Women in Computer Science</li>
+        </ul>
+    </div>
+</div>
+
+<div class="experience-section">
+    <div class="experience-header">
+        <div class="logo-container">
+            <img src="../images/cisco.png" alt="Cisco Systems logo" height="55px" class="company-logo">
+        </div>
+        <div class="title-container">
+            <h2 class="experience-title">IT Engineer<br>Cloud Orchestration and Platform Services, Cisco Systems</h2>
+            <div class="meta-container">
+                <p class="experience-period">January 2013 - June 2014</p>
+                <p class="experience-location">Bangalore, India</p>
+            </div>
+        </div>
+    </div>
+    <div class="experience-description">
+        <ul>
+            <li>Added features to company-wide web administration and resource reporting tool for an internal PaaS; maintained cisco.com and related sites with on-call support.</li>
+            <li>Won "Cisco Star" and "Connected Recognition" awards.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="experience-section">
+    <div class="experience-header">
+        <div class="logo-container">
+            <img src="../images/pes_university.png" alt="PES University logo" height="60px" class="education-logo">
+        </div>
+        <div class="title-container">
+            <h2 class="experience-title">B.E., Computer Science and Engineering<br>PES University</h2>
+            <div class="meta-container">
+                <p class="experience-period">2009 - 2013</p>
+                <p class="experience-location">Bangalore, India</p>
+            </div>
+        </div>
+    </div>
+    <div class="experience-description">
+        <ul>
+            <li>Graduated with Distinction Award, all eight semesters</li>
+        </ul>
+    </div>
+</div>
+	</main>
+
+	<script>
+		// Theme toggle
+		(function() {
+			var toggle = document.querySelector('.theme-toggle');
+			if (!toggle) return;
+			var icon = toggle.querySelector('i');
+
+			function syncIcon(theme) {
+				icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+			}
+
+			syncIcon(document.documentElement.getAttribute('data-theme'));
+
+			toggle.addEventListener('click', function() {
+				var current = document.documentElement.getAttribute('data-theme');
+				var next = current === 'dark' ? 'light' : 'dark';
+				document.documentElement.setAttribute('data-theme', next);
+				try { localStorage.setItem('theme', next); } catch (e) {}
+				syncIcon(next);
+			});
+		})();
+
+		// Add smooth scrolling
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+
+		// Mobile navigation
+		const navToggle = document.querySelector('.nav-toggle');
+		const navLinks = document.querySelector('.nav-links');
+
+		navToggle.addEventListener('click', () => {
+			navLinks.classList.toggle('nav-active');
+			navToggle.classList.toggle('active');
+		});
+
+		// Scroll-reveal
+		(function() {
+			// Only decorate genuine section headings (not experience/skill card titles)
+			document.querySelectorAll('.content h2').forEach(function(el) {
+				if (el.classList.contains('experience-title')) return;
+				if (el.closest('.skill-category')) return;
+				el.classList.add('reveal-heading');
+			});
+
+			var revealEls = document.querySelectorAll(
+				'.card, .timeline-item, .skill-category, .project-card, .experience-section, h2.reveal-heading'
+			);
+
+			if ('IntersectionObserver' in window) {
+				var observer = new IntersectionObserver(function(entries) {
+					entries.forEach(function(entry) {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('visible');
+							observer.unobserve(entry.target);
+						}
+					});
+				}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+				revealEls.forEach(function(el) { observer.observe(el); });
+			} else {
+				revealEls.forEach(function(el) { el.classList.add('visible'); });
+			}
+		})();
+	</script>
+</body>
+</html>

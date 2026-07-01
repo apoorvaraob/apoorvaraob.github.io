@@ -20,8 +20,8 @@ theme:
   name: null
   custom_dir: 'custom_theme/'
   palette:
-    primary: '#1E4B94'  # Royal Blue
-    accent: '#4A4A4A'   # Gray
+    primary: '#7c3aed'  # Violet
+    accent: '#7c3aed'   # Violet
   font:
-    text: 'Roboto'
+    text: 'Lora'
     code: 'Roboto Mono'
